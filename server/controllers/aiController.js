@@ -37,11 +37,17 @@ export const generateArticle = async (req, res) => {
             });
         }
 
+<<<<<<< HEAD
         // GROQ ARTICLE GENERATION
         const response = await clientGro.chat.completions.create({
             model: "llama-3.3-70b-versatile",
             messages: [
                 {
+=======
+        const response = await AI.chat.completions.create({
+            model: "gemini-2.5-flash",
+            messages: [{
+>>>>>>> 034419aa7e043c45e4660dee86acdfac54cad89a
                     role: "user",
                     content: `
 Write a detailed article based on this prompt:
